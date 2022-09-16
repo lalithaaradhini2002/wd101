@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>wd101</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <script src="final.js" defer></script>
   </head>
   <body bgcolor="yellow">
-    <h1 style="color:red;" align="center" class="head">REGISTRATION FORM</h1>
-    <br />
     <div class="box">
-      <form class="form" id="F1">
+      <form class="form" id="form">
+        <h2 align="center"><u>Registration Form</u></h2>
 
-        <table class="tables" cellspacing="15px">
+        <table class="tableForm" cellspacing="25px">
           <tr>
             <td><label for="name">Name :</label></td>
             <td>
@@ -20,8 +20,9 @@
                 class="input"
                 type="text"
                 name="name"
-                id="t1"
-                placeholder="Enter your name"
+                id="name"
+                placeholder="Full Name"
+                required
               />
             </td>
           </tr>
@@ -30,10 +31,11 @@
             <td>
               <input
                 class="input"
-                type="text"
+                type="email"
                 name="email"
-                id="t2"
-                placeholder="Enter your Email"
+                id="email"
+                placeholder="Email"
+                required
               />
             </td>
           </tr>
@@ -44,8 +46,9 @@
                 class="input"
                 type="password"
                 name="password"
-                id="p1"
+                id="password"
                 placeholder="Password"
+                required
               />
             </td>
           </tr>
@@ -58,11 +61,12 @@
                 type="date"
                 name="dob"
                 id="dob"
+                required
               />
             </td>
           </tr>
           <tr>
-            <td colspan="3">
+            <td colspan="2">
               <input type="checkbox" name="agree" id="agree" />
               <label for="checkbox">Accept Terms & Conditions</label>
             </td>
@@ -74,6 +78,11 @@
           </tr>
         </table>
       </form>
+    </div>
+
+    <div class="entry">
+      <h2 class="subHead">Entries</h2>
+      <div id="tableDiv"></div>
     </div>
   </body>
 </html>
